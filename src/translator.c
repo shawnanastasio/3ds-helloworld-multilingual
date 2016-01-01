@@ -25,7 +25,7 @@ char* get_hello_world(int code)
       strcpy(response_ptr, "Hallo Welt!");
       break;
     case 4 :
-      strcpy(response_ptr, "Ciao mondo!")
+      strcpy(response_ptr, "Ciao mondo!");
       break;
     case 5 :
       strcpy(response_ptr, "Hola mundo!");
