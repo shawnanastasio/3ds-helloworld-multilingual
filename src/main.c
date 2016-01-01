@@ -25,14 +25,13 @@ int main(int argc, char** argv)
 	printf("       Result: 0x%x\n", (int)res);
 	printf("Language code: %d", (int)language);
 
+	// Display hello world based on language on TOP screen
+	consoleInit(GFX_TOP, NULL);
+	printf(get_hello_world((int)language));
 
 	// Main loop
 	while (aptMainLoop())
 	{
-		// Display hello world based on language on TOP screen
-		consoleInit(GFX_TOP, NULL);
-		printf(get_hello_world((int)language));
-
 		hidScanInput();
 
 		u32 kDown = hidKeysDown();
