@@ -1,1 +1,2 @@
-char* get_hello_world(u8 code);
+/* Translator function to return correct hello world string */
+char* get_hello_world(int code);
